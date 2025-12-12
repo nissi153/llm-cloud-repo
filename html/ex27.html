@@ -38,12 +38,26 @@
       }
       aside {
         border: 1px solid skyblue;
+        /* CTRL+/ CSS의 주석문 */
+        /* block속성을 inline속성으로 바꾸기 */
+        /* 1. display속성을 inline으로 바꾸기 */
+        /* 2. float속성으로 left,right값 사용하기 */
+        /* float : inline으로 변경하고, 왼쪽으로 배치 */
+        float: left;
+        /* width : 부모태그(main)의 가용너비의 15%을 차지 */
+        width: 15%;
       }
       section {
         border: 1px solid purple;
+        /* float : inline으로 변경하고, 오른쪽으로 배치 */
+        float: right;
+        /* width : 부모태그(main)의 가용너비의 80%을 차지 */
+        width: 80%;
       }
       footer {
         border: 1px solid brown;
+        /* clear : float속성을 초기화, both : left,right 둘다 */
+        clear: both;
       }
     </style>
   </head>
