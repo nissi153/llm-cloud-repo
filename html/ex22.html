@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>입력태그 - 색상,날짜,시간 입력</title>
+  </head>
+  <body>
+    <!-- 색상 선택자(Color Picker) -->
+    <!--  색상값 : Red  0~255(십진수) 0x00 ~0xFF(16진수)   -->
+    <!-- value속성: 선택(입력)된 값 -->
+    <input type="color" value="#00FF00" /> <br />
+
+    <!-- 날짜 선택자(Date Picker) -->
+    <input type="date" value="2025-01-01" /> <br />
+
+    <!-- 날짜-시간 선택자 -->
+    <input type="datetime-local" value="2025-12-25T22:00" /> <br />
+
+    <!-- 이메일 입력(type=text와 동일하나 문법체크 됨.) -->
+    <!-- hong@gmail.com   hong.gmail@com  hong@.com -->
+    <input type="email" value="hong@gmail.com" />
+
+    <!-- 달(month) 입력 -->
+    <input type="month" value="2025-10" />
+  </body>
+</html>
