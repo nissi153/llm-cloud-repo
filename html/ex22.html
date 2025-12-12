@@ -17,9 +17,18 @@
 
     <!-- 이메일 입력(type=text와 동일하나 문법체크 됨.) -->
     <!-- hong@gmail.com   hong.gmail@com  hong@.com -->
-    <input type="email" value="hong@gmail.com" />
+    <input type="email" value="hong@gmail.com" /> <br />
 
     <!-- 달(month) 입력 -->
-    <input type="month" value="2025-10" />
+    <input type="month" value="2025-10" /> <br />
+
+    <!-- 숫자(number) 입력 -->
+    <input type="number" value="1" step="1" min="1" max="9" /> <br />
+    <!-- 바형식 범위(숫자) 입력 -->
+    <input type="range" value="50" step="10" min="0" max="100" /> <br />
+    <!-- 많은 양의 텍스트 입력(적은양 텍스트 type=text) -->
+    <!-- cols : 가로칸수 rows : 세로줄수  -->
+    <!-- value속성이 없고, 태그안에 값을 넣는다. -->
+    <textarea cols="30" rows="10">상품후기입니다.</textarea>
   </body>
 </html>
