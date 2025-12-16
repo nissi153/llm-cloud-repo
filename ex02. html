@@ -1,0 +1,11 @@
+<!Doctype html>
+<!--lang 속성 : 문서ㅏ의 주된 언어 형식을 알려줌. -->
+<!-- en:영어 Ja:일본어 zh:중국어 de:독일어 -->
+<html long=:"ko">
+<head>
+<title>문서제목</샤싣>
+</head>
+<body>
+실제 콘텐츠입니다
+</ㅠㅐ요>
+</html>
