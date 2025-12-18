@@ -48,8 +48,7 @@
         background-color: #26c2c5;
         text-align: center;
       }
-      nav ul,
-      li {
+      nav ul li {
         display: inline-block;
         /* border: 1px solid red; */
         height: 100%;
@@ -64,11 +63,25 @@
         background-color: lightgreen;
       }
       aside {
-        height: 100%;
-        width: 29%;
+        height: auto;
+        width: 20%;
         display: inline-block;
-        background-color: lightpink;
+        vertical-align: top;
+        /* background-color: lightpink; */
+        margin: 10px;
+        border: 1px solid green;
+        padding: 20px;
       }
+      aside h4 {
+        margin-bottom: 5px;
+      }
+      aside img {
+        width: 150px;
+      }
+      aside ul li {
+        display: block;
+      }
+
       section {
         height: 100%;
         width: 70%;
@@ -95,7 +108,7 @@
       <main>
         <aside>
           <h4>Golden Retriever</h4>
-          <img src="https://placehold.co/100x100" alt="강아지이미지" />
+          <img src="dog.jpg" alt="강아지이미지" />
           <ul>
             <li><a href="#">● 기본특성</a></li>
             <li><a href="#">● 단점</a></li>
