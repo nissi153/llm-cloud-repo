@@ -19,10 +19,15 @@
         /* 점점점 123 제거 */
         list-style: none;
       }
+      body {
+        background-color: cyan;
+      }
 
       #wrapper {
         /* 전체콘텐츠의 너비 고정(반응형아님) */
         width: 1000px;
+        /* 기본값, 콘텐츠의 높이만큼 */
+        height: auto;
         background-color: skyblue;
         /* 콘텐츠를 수평가운데로 정렬 */
         /* 좌우여백 auto : 왼쪽과 오른쪽 공백을 균등배분 */
@@ -30,11 +35,29 @@
       }
       header {
         height: 100px;
-        background-color: lightcoral;
+        /* background-color: lightcoral; */
+      }
+      header h1 {
+        text-align: center;
+        /* 부모태그의 높이와 동일하게 한다. */
+        line-height: 100px;
+        vertical-align: middle;
       }
       nav {
-        height: 50px;
-        background-color: yellow;
+        height: 30px;
+        background-color: #26c2c5;
+        text-align: center;
+      }
+      nav ul,
+      li {
+        display: inline-block;
+        /* border: 1px solid red; */
+        height: 100%;
+      }
+      nav a {
+        line-height: 30px;
+        color: white;
+        margin: 5px;
       }
       main {
         height: 500px;
