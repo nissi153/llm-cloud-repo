@@ -8,8 +8,9 @@
         background-color: #eee;
         border: 1px solid #222;
         margin-bottom: 10px;
-        background: yellow;
+        background: #ffff00;
         display: flex;
+        width: 300px;
       }
       .box {
         background: green;
@@ -19,6 +20,16 @@
       p {
         color: white;
         text-align: center;
+      }
+      .opt1 {
+        /* 기본값, 줄바꿈 안함. 삐져나감. */
+        flex-wrap: nowrap;
+      }
+      .opt2 {
+        flex-wrap: wrap;
+      }
+      .opt3 {
+        flex-wrap: wrap-reverse;
       }
     </style>
   </head>
