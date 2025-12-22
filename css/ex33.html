@@ -8,11 +8,26 @@
       * {
         margin: 0;
         padding: 0;
+      }
+      a {
+        /* 밑줄제거 */
+        text-decoration: none;
+      }
+      ul,
+      ol,
+      li {
+        /* 점점점 123 제거 */
         list-style: none;
       }
+      body {
+        background-color: cyan;
+      }
+
       #wrapper {
         /* 전체콘텐츠의 너비 고정(반응형아님) */
         width: 1000px;
+        /* 기본값, 콘텐츠의 높이만큼 */
+        height: auto;
         background-color: skyblue;
         /* 콘텐츠를 수평가운데로 정렬 */
         /* 좌우여백 auto : 왼쪽과 오른쪽 공백을 균등배분 */
@@ -20,31 +35,73 @@
       }
       header {
         height: 100px;
-        background-color: lightcoral;
+        /* background-color: lightcoral; */
+      }
+      header h1 {
+        text-align: center;
+        /* 부모태그의 높이와 동일하게 한다. */
+        line-height: 100px;
+        vertical-align: middle;
       }
       nav {
-        height: 50px;
-        background-color: yellow;
+        height: 30px;
+        background-color: #26c2c5;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline-block;
+        /* border: 1px solid red; */
+        height: 100%;
+      }
+      nav a {
+        line-height: 30px;
+        color: white;
+        margin: 5px;
       }
       main {
         height: 500px;
-        background-color: lightgreen;
+        /* background-color: lightgreen; */
       }
       aside {
-        height: 100%;
-        width: 29%;
+        height: auto;
+        width: 20%;
         display: inline-block;
-        background-color: lightpink;
+        vertical-align: top;
+        /* background-color: lightpink; */
+        margin: 10px;
+        border: 1px solid green;
+        padding: 20px;
       }
+      aside h4 {
+        margin-bottom: 5px;
+      }
+      aside img {
+        width: 150px;
+      }
+      aside ul li {
+        display: block;
+      }
+
       section {
         height: 100%;
-        width: 70%;
+        width: 73%;
         display: inline-block;
-        background-color: orange;
+        /* background-color: orange; */
+        padding-top: 10px;
       }
       footer {
-        height: 100px;
-        background-color: plum;
+        height: 50px;
+        background-color: #aaa;
+        text-align: center;
+      }
+      footer ul li {
+        display: inline-block;
+        height: 100%;
+      }
+      footer a {
+        line-height: 50px;
+        color: black;
+        margin: 5px;
       }
     </style>
   </head>
@@ -62,7 +119,7 @@
       <main>
         <aside>
           <h4>Golden Retriever</h4>
-          <img src="https://placehold.co/100x100" alt="강아지이미지" />
+          <img src="dog.jpg" alt="강아지이미지" />
           <ul>
             <li><a href="#">● 기본특성</a></li>
             <li><a href="#">● 단점</a></li>
