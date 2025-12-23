@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      /* 
+      display: table;
+      table 태그처럼 사용
+
+      display: table-row;
+      tr 태그처럼 사용
+
+      display: table-cell;
+      td 태그처럼 사용
+
+      table-layout: auto;
+      auto : cell 내용에 따라 너비가 정해짐, 기본값
+      fixed : 첫번째 행에 따라 열너비를 결정
+
+      border-collapse: collapse;
+      collapse: table, cell 의 테두리선을 표시하는 방식으로 collapse 는 셀간의 간격을 합쳐서 표현한다.
+       주로 table 에서는 셀간 margin 적용이 안되기에, 
+       셀간의 간격을 합친 후, border-bottom 으로 간격을 설정할 수 있다.
+       separate : 기본값, 셀마다 개별 테두리.
+
+      vertical-align: middle;
+      셀 내부를 수직 정렬할 수 있다.*inline, table-cell 박스 요소에만 적용된다.
+
+      white-space: nowrap;
+      셀 내부의 텍스트가 다음 라인으로 개행되서 수직으로 나오는 것을 방지할 수 있다. */
+
+      /* display: table을 활용한 유연한 테이블 레이아웃 */
+      .table-container {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .table-row {
+        display: table-row;
+      }
+
+      /* 헤더/바디 공통 셀 스타일 */
+      .table-cell {
+        display: table-cell;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+
+      /* 헤더 그룹 스타일 */
+      .table-header {
+        display: table-header-group;
+        font-weight: bold;
+        background-color: #f0f0f0;
+      }
+
+      .table-body {
+        display: table-row-group;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div를 활용해 구성한 유연한 테이블 구조 -->
+    <div class="table-container">
+      <div class="table-header">
+        <div class="table-row">
+          <div class="table-cell">이름</div>
+          <div class="table-cell">나이</div>
+          <div class="table-cell">직업</div>
+        </div>
+      </div>
+      <div class="table-body">
+        <div class="table-row">
+          <div class="table-cell">홍길동</div>
+          <div class="table-cell">30</div>
+          <div class="table-cell">개발자</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">김철수</div>
+          <div class="table-cell">25</div>
+          <div class="table-cell">디자이너</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
