@@ -46,10 +46,43 @@
       input[type="text"] {
         display: block;
         width: 100%;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        height: 32px;
+        padding: 7px;
+        font-size: 16px;
+        font-family: "맑은 고딕";
+      }
+      input[type="text"]:focus {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #ccc;
       }
       input[type="password"] {
         display: block;
         width: 100%;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        height: 32px;
+        padding: 7px;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      input[type="password"]:focus {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #ccc;
+      }
+      .keep_status {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        margin-bottom: 20px;
+      }
+      #checkbox_label {
+        margin-bottom: 2px;
+        color: #999;
+        font-size: 12px;
       }
 
       .keep_status input[type="checkbox"] {
@@ -62,6 +95,72 @@
         width: 20px;
         height: 20px;
       }
+      .keep_status #ico_info {
+        cursor: pointer;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url("ico_comm.png") no-repeat 0 0;
+        background-size: 300px auto;
+        /*  -col*(w+gapX)px  -row*(h+gapY)px;  */
+        background-position: -118px -128px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        border: none;
+        background-color: yellow;
+        height: 50px;
+        border-radius: 5px;
+      }
+      input[type="submit"]:hover {
+        background-color: rgb(223, 223, 24);
+      }
+      button[type="button"] {
+        width: 100%;
+        border: none;
+        background-color: #f0f0f0;
+        height: 50px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      button[type="button"]:hover {
+        background-color: #c7c7c7;
+      }
+      #line {
+        font-size: 14px;
+        text-align: center;
+        margin: 10px 0;
+      }
+      #line::before {
+        content: "";
+        /* span inline요소 생성 */
+        display: inline-block;
+        height: 1px;
+        background-color: #ccc;
+        width: 210px;
+        margin-bottom: 7px;
+        margin-left: 5px;
+        margin-right: 6px;
+      }
+      #line::after {
+        content: "";
+        /* span inline요소 생성 */
+        display: inline-block;
+        height: 1px;
+        background-color: #ccc;
+        width: 210px;
+        margin-bottom: 7px;
+        margin-left: 5px;
+        margin-right: 6px;
+      }
+      #join {
+        display: flex;
+        justify-content: space-between;
+      }
+      #join a {
+        font-size: 12px;
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -70,20 +169,25 @@
         <div id="logo"></div>
       </div>
       <div id="section">
-        <input type="text" />
-        <input type="password" />
+        <input type="text" placeholder="카카오 아이디,이메일,전화번호" />
+        <input type="password" placeholder="비밀번호" />
         <div id="login_info">
           <div class="keep_status">
-            <span class="ico_comm ico_check"></span>
-            <input type="checkbox" /> <span>로그인상태유지</span>
-            <button></button>
+            <input type="checkbox" />
+            <span id="checkbox_label">로그인상태유지</span>
+            <span id="ico_info"></span>
           </div>
           <input type="submit" value="로그인" />
           <div id="line">또는</div>
           <button type="button">QR코드 로그인</button>
-          <div>
+          <div id="join">
             <div><a href="">회원가입</a></div>
-            <div><a href="">계정찾기</a> | <a href="">비밀번호찾기</a></div>
+            <!-- 공백문자 &nbsp; 마진을 대체가능 -->
+            <div>
+              <a href="">계정찾기</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=""
+                >비밀번호찾기</a
+              >
+            </div>
           </div>
         </div>
       </div>
